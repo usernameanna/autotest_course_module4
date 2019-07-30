@@ -8,6 +8,6 @@ class CartPage(BasePage):
        assert self.is_not_element_present(*CartPageLocators.BUSKETITEMS), "Have items in cart"
 
     def should_be_empty_basket_text(self):
+        assert self.browser.find_element(*CartPageLocators.EMPTYBASKET).text
         text = self.browser.find_element(*CartPageLocators.EMPTYBASKET).text
-        needed_text = "Your basket is empty."
-        assert needed_text == text,"Cart is not empty, have items"
+        assert text,"Cart is not empty, have items"

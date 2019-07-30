@@ -4,6 +4,7 @@ class BasePageLocators(object):
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
     BTNBASKET = (By.CSS_SELECTOR, "#default > header > div.page_inner > div > div.basket-mini.pull-right.hidden-xs > span > a")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
 
 #class MainPageLocators(object):
 
@@ -13,6 +14,10 @@ class LoginPageLocators(object):
     LOGIN_URL = (By.CSS_SELECTOR, "#login_url")
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
+    REG_EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    REG_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
+    REG_CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
+    REG_BUTTON = (By.CSS_SELECTOR, "#register_form > button")
 
 class ProductPageLocators(object):
     ADDTOBASKET = (By.CSS_SELECTOR, ".btn-add-to-basket")
